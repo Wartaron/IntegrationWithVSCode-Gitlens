@@ -6,6 +6,8 @@ const PostInitialState = {
   postList: []
 };
 
+const dispatchConsoleLog = (msg) => console.log(msg);
+
 export default function PostReducers(state = PostInitialState, action) {
 
   switch (action.type) {
