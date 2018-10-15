@@ -1,15 +1,21 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = PostReducers;
 
-var _actionTypes = require('actions/actionTypes');
+var _actionTypes = require("actions/actionTypes");
 
 var PostInitialState = {
   postList: []
 };
+
+var dispatchConsoleLog = function dispatchConsoleLog(msg) {
+  return console.log(msg);
+};
+
+dispatchConsoleLog("Fire!");
 
 function PostReducers() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : PostInitialState;

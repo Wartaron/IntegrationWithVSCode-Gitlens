@@ -8,6 +8,8 @@ const PostInitialState = {
 
 const dispatchConsoleLog = (msg) => console.log(msg);
 
+dispatchConsoleLog("Fire!");
+
 export default function PostReducers(state = PostInitialState, action) {
 
   switch (action.type) {
